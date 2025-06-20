@@ -4,13 +4,16 @@
     {
       "src": "/api/scrape",
       "methods": ["GET"],
-      "dest": "/api/scrape"
+      "dest": "/api/scrape",
+      "headers": {
+        "Cache-Control": "public, max-age=3600"
+      }
     }
   ],
-  "functions": {
-    "api/scrape.js": {
-      "maxDuration": 30,
-      "memory": 1024
+  "regions": ["sin1"],  
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--max_old_space_size=300"
     }
   }
 }
