@@ -1,14 +1,14 @@
 {
   "name": "sonyliv-scraper",
   "version": "1.0.0",
-  "scripts": {
-    "start": "node api/scrape.js"
-  },
-  "dependencies": {
-    "node-fetch": "^3.3.2",
-    "jsdom": "^24.0.0"
-  },
   "engines": {
     "node": "18.x"
+  },
+  "dependencies": {
+    "jsdom": "^24.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "scripts": {
+    "start": "node api/scrape.js"
   }
 }
