@@ -1,14 +1,9 @@
 {
-  "name": "sonyliv-scraper",
+  "name": "prime-link-api",
   "version": "1.0.0",
-  "engines": {
-    "node": "18.x"
-  },
+  "type": "module",
   "dependencies": {
-    "jsdom": "^24.0.0",
-    "node-fetch": "^3.3.2"
-  },
-  "scripts": {
-    "start": "node api/scrape.js"
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12"
   }
 }
