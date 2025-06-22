@@ -1,19 +1,9 @@
 {
   "version": 2,
-  "routes": [
+  "builds": [
     {
-      "src": "/api/scrape",
-      "methods": ["GET"],
-      "dest": "/api/scrape",
-      "headers": {
-        "Cache-Control": "public, max-age=3600"
-      }
+      "src": "api/index.js",
+      "use": "@vercel/node"
     }
-  ],
-  "regions": ["sin1"],  
-  "build": {
-    "env": {
-      "NODE_OPTIONS": "--max_old_space_size=300"
-    }
-  }
+  ]
 }
