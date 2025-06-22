@@ -1,9 +1,8 @@
 {
-  "name": "prime-link-api",
-  "version": "1.0.0",
+  "name": "prime-search-api",
   "type": "module",
   "dependencies": {
-    "axios": "^1.6.0",
-    "cheerio": "^1.0.0-rc.12"
+    "@sparticuz/chromium": "^112.0.0",
+    "puppeteer-core": "^21.3.8"
   }
 }
